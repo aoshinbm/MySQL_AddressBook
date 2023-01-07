@@ -33,7 +33,7 @@ func main() {
 }
 func listAll() ([]Contacts, error) {
 	var contact []Contacts
-	rows, err := db.Query("SELECT * FROM contact;")
+	rows, err := db.Query("SELECT * FROM contact; ")
 	if err != nil {
 		return nil, fmt.Errorf("error in query all contact: %v", err)
 	}

@@ -22,6 +22,9 @@ values
 select * from contact;
 show tables;
 
+select * from contact
+where city="Pune";
+
 update contact
 set phoneno=775432188
 where state="MAHA";
